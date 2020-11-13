@@ -1,6 +1,9 @@
 # ekool-cli
 EKooli CLI Versioon
-
+Kasutus:
+```
+python3 main.py
+```
 Autor: Robi Rohumaa
 
 Programmi abil saab vaadata eKooli teateid/hindeid ning näha kodutöid.
