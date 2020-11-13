@@ -130,7 +130,7 @@ class EKoolParser:
     # Vanemate võtmine
     def get_parents(self):
         '''
-         {'students': [{'name1': 'Robi', 'name2': 'Rohumaa', 'profileImgFn': 'REDACTED'}], 'parents': [{'name1': 'Priit', 'name2': 'Rohumaa', 'profileImgFn': None}, {'name1': 'Helen', 'name2': 'Rohumaa', 'profileImgFn': None}]}
+         {'students': [{'name1': 'NAME', 'name2': 'LASTNAME', 'profileImgFn': 'REDACTED'}], 'parents': [{'name1': 'PARENTNAME', 'name2': 'PARENTLASTNAME', 'profileImgFn': None}, {'name1': 'PARENTNAME', 'name2': 'PARENTLASTNAME', 'profileImgFn': None}]}
         :return:
         '''
         self.parents = self.data_miner_with_cache(['family'], API_URL)["parents"]
@@ -153,7 +153,7 @@ class EKoolParser:
         }
         '''
         Sisselogimisel tagasi saadetud response
-        {'access_token': 'bc24a0f1-8f28-4407-b7f0-3974dde3c04f', 'token_type': 'bearer', 'refresh_token': '6ed2e540-aa44-4802-81ff-0d6c8c6f1d56', 'scope': 'read'}
+        {'access_token': 'xxxxxx-8f28-4407-b7f0-3974dde3c04f', 'token_type': 'bearer', 'refresh_token': 'xxxxxx-aa44-4802-81ff-0d6c8c6f1d56', 'scope': 'read'}
         '''
         # Teeme requesti, mis logib meid sisse
         r = requests.post(SERVER_ROOT_URL + 'auth/oauth/token', data=query_base, headers=headers)
